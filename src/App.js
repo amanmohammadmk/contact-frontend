@@ -1,24 +1,49 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Addcontact from './pages/Addcontact';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Homepage from './pages/Homepage';
+import ContactList from './pages/ContactList';
+import Cardshow from './pages/Cardshow';
+import Onecard from './pages/Onecard';
+import Edit from './pages/Edit';
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Header />
+
+      <Routes >
+
+        <Route path='/' element={<Homepage />} />
+        <Route path='/add' element={<Addcontact />} />
+        <Route path='/view' element={<ContactList />} />
+        <Route path='/card' element={ <Cardshow/>} />
+        <Route path='/onecard/:id' element={ <Onecard/>} />
+        <Route path='/edit/:id' element={ <Edit/>} />
+
+        
+        
+        
+
+
+        
+      
+
+        
+      </Routes>
+
+
+      <Footer />
+
+    </>
   );
 }
 

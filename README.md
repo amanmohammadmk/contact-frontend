@@ -68,3 +68,53 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+ <div className="flex flex-col justify-center p-3 gap-3"  >
+
+                <article className="md:grid grid-cols-2 gap-10 " >
+                  <div>
+                    <label htmlFor="name">Enter Your id</label>
+                    <input type="text" className='form-control' name='id' placeholder='id' onChange={setInput} />
+                  </div>
+
+
+
+                  <div>
+                    <label htmlFor="address">Enter Your name</label>
+                    <input type="text"className='form-control' name='name' placeholder='name' onChange={setInput} />
+                  </div>
+                </article>
+
+
+                <article className="md:grid grid-cols-3 gap-5">
+                  <div>
+                    <label htmlFor="email">Enter Your number</label>
+                    <input type="text" className='form-control' name='number' placeholder='mobile number' onChange={setInput} />
+                  </div>
+
+                  <div>
+                    <label htmlFor="phone">Enter Your email</label>
+                    <input type="text" className='form-control' name='email' placeholder='email' onChange={setInput} />
+                  </div>
+
+
+                  <div>
+                    <label htmlFor="website">Enter Your image url</label>
+                    <input type="text" className='form-control' name='imageurl' placeholder='imageurl' onChange={setInput} />
+                  </div>
+                </article>
+
+                <article className="md:grid grid-cols-2 gap-10">
+                  <div>
+                    <label htmlFor="bankName">Enter Your bank batch</label>
+                    <input type="text"className='form-control' name='batch' placeholder='batch' onChange={setInput} />
+                  </div>
+                </article>
+
+
+                <button className="mt-3 bg-blue-500 py-2 px-8 rounded shodow border-2 border-blue-500 hover:bg-transparent hover:text-black transition-all duration-300" onClick={handleCreate}>Submit</button>
+              </div>
